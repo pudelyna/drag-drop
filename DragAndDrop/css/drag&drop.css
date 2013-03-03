@@ -1,0 +1,49 @@
+body {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 0.8em;
+}
+
+#dropTarget {
+	font-size: 20px;
+	background: white;
+	width: 100px;
+	padding: 1em;
+	display: block;
+    color: #000099;
+    position: relative;
+    font-family: "Times New Roman", serif;
+    height: 200px;
+    width: 410px;
+}
+
+code {
+	font-size: 1.3em;
+}
+
+img {
+	border: none;
+}
+
+.selected{
+	border: 2px solid blue;
+}
+
+.caption {
+	text-align: center;
+	margin-top: 0.3em;
+}
+
+#consoleLog {
+	display: block;
+	overflow: scroll;
+	width: 79em;
+	height: 15em;
+	border: solid 1px black;
+	margin-bottom: 2em;
+}
+
+iframe {
+	height: 250px;
+	width: 500px;
+}
+
