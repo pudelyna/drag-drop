@@ -6,13 +6,12 @@ body {
 #dropTarget {
 	font-size: 20px;
 	background: white;
-	width: 100px;
 	padding: 1em;
 	display: block;
     color: #000099;
     position: relative;
     font-family: "Times New Roman", serif;
-    height: 200px;
+    height: 190px;
     width: 410px;
 }
 
