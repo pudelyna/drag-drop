@@ -11,14 +11,14 @@ $(function() {
 		
 		//scroll bottom in the console view
 		var height = $('#consoleLog', window.parent.document)[0].scrollHeight;
-        $('#consoleLog', window.parent.document).scrollTop(height);
+                $('#consoleLog', window.parent.document).scrollTop(height);
 		
 	};
 	
 	//JQuery tag name + attribute value selector
 	$('img[draggable="true"]').each(function (){
 	
-	   //manipulate dragstart event for each draggable image in the source frame
+	       //manipulate dragstart event for each draggable image in the source frame
  		$( this ).bind('dragstart',function( event ){
 		
 			//the user can only MOVE the objects, but not copy them
@@ -47,7 +47,7 @@ $(function() {
 				
  		    	log('CTRL pressed in multiple selection: '+JSON.stringify(draggableObjects));
 				
-				//prevent default behaviour for click event
+			//prevent default behaviour for click event
  		    	event.preventDefault();
  		    }
 			
@@ -57,7 +57,7 @@ $(function() {
 	//stop propagation of dragover event in order to manipulate the drop event
 	$('#dropTarget').bind('dragover', function( event ){
 	
-	    //target area will only accept a move for dragged objects
+	        //target area will only accept a move for dragged objects
 		event.originalEvent.dataTransfer.dropEffect = 'move';
 		event.preventDefault();
 		
@@ -66,7 +66,7 @@ $(function() {
 	//manipulate the drop event
 	$('#dropTarget').bind('drop', function( event ){
 	
-	    //get the list of draggable ids from the original event
+	       //get the list of draggable ids from the original event
 		var droppedElements = $.parseJSON(event.originalEvent.dataTransfer.getData('Text'));
 		
 		//and drop each one of them in the dropzone of target iframe
@@ -91,10 +91,10 @@ $(function() {
 			},
 			
 			//callback function for request error handling
-            error: function(xhr, textStatus, errorThrown) {
-                log('Server error response['+textStatus+']');
-            }
-			});
+                        error: function(xhr, textStatus, errorThrown) {
+                		log('Server error response['+textStatus+']');
+            		}
+		});
 		
 		event.preventDefault();
 	});
