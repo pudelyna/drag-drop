@@ -5,7 +5,7 @@ Drag and Drop JavaScript Application
 *Contact*: pudelyna@yahoo.com  
 *Source code*: https://github.com/pudelyna/drag-drop  
 *Version*: 1.0  
-*System requirements*: Windows XP/Vista/7/8, JRE6 or later, Apache Tomcat 7  
+*System requirements*: JRE6/JDK6 or later, Apache Tomcat 7  
 *Tested on*: Internet Explorer 8, Mozilla Firefox 19.0, Google Chrome 25.0.1364.97  
 
 Description
